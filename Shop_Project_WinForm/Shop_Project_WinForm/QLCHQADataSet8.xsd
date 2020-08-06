@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QLCHQADataSet8" targetNamespace="http://tempuri.org/QLCHQADataSet8.xsd" xmlns:mstns="http://tempuri.org/QLCHQADataSet8.xsd" xmlns="http://tempuri.org/QLCHQADataSet8.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLCHQAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLCHQAConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Shop_Project_WinForm.Properties.Settings.GlobalReference.Default.QLCHQAConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="quanlihangtonnamTableAdapter" GeneratorDataComponentClassName="quanlihangtonnamTableAdapter" Name="quanlihangtonnam" UserDataComponentName="quanlihangtonnamTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLCHQAConnectionString (Settings)" DbObjectName="QLCHQA.dbo.quanlihangtonnam" DbObjectType="Function" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT masp, tensp, mausac, kichthuoc, soluongnhap, soluongban, soluongton FROM dbo.quanlihangtonnam()</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="masp" DataSetColumn="masp" />
+              <Mapping SourceColumn="tensp" DataSetColumn="tensp" />
+              <Mapping SourceColumn="mausac" DataSetColumn="mausac" />
+              <Mapping SourceColumn="kichthuoc" DataSetColumn="kichthuoc" />
+              <Mapping SourceColumn="soluongnhap" DataSetColumn="soluongnhap" />
+              <Mapping SourceColumn="soluongban" DataSetColumn="soluongban" />
+              <Mapping SourceColumn="soluongton" DataSetColumn="soluongton" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QLCHQADataSet8" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QLCHQADataSet8" msprop:Generator_UserDSName="QLCHQADataSet8">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="quanlihangtonnam" msprop:Generator_TableClassName="quanlihangtonnamDataTable" msprop:Generator_TableVarName="tablequanlihangtonnam" msprop:Generator_TablePropName="quanlihangtonnam" msprop:Generator_RowDeletingName="quanlihangtonnamRowDeleting" msprop:Generator_RowChangingName="quanlihangtonnamRowChanging" msprop:Generator_RowEvHandlerName="quanlihangtonnamRowChangeEventHandler" msprop:Generator_RowDeletedName="quanlihangtonnamRowDeleted" msprop:Generator_UserTableName="quanlihangtonnam" msprop:Generator_RowChangedName="quanlihangtonnamRowChanged" msprop:Generator_RowEvArgName="quanlihangtonnamRowChangeEvent" msprop:Generator_RowClassName="quanlihangtonnamRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="masp" msprop:Generator_ColumnVarNameInTable="columnmasp" msprop:Generator_ColumnPropNameInRow="masp" msprop:Generator_ColumnPropNameInTable="maspColumn" msprop:Generator_UserColumnName="masp" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tensp" msprop:Generator_ColumnVarNameInTable="columntensp" msprop:Generator_ColumnPropNameInRow="tensp" msprop:Generator_ColumnPropNameInTable="tenspColumn" msprop:Generator_UserColumnName="tensp" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mausac" msprop:Generator_ColumnVarNameInTable="columnmausac" msprop:Generator_ColumnPropNameInRow="mausac" msprop:Generator_ColumnPropNameInTable="mausacColumn" msprop:Generator_UserColumnName="mausac" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kichthuoc" msprop:Generator_ColumnVarNameInTable="columnkichthuoc" msprop:Generator_ColumnPropNameInRow="kichthuoc" msprop:Generator_ColumnPropNameInTable="kichthuocColumn" msprop:Generator_UserColumnName="kichthuoc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="soluongnhap" msprop:Generator_ColumnVarNameInTable="columnsoluongnhap" msprop:Generator_ColumnPropNameInRow="soluongnhap" msprop:Generator_ColumnPropNameInTable="soluongnhapColumn" msprop:Generator_UserColumnName="soluongnhap" type="xs:int" minOccurs="0" />
+              <xs:element name="soluongban" msprop:Generator_ColumnVarNameInTable="columnsoluongban" msprop:Generator_ColumnPropNameInRow="soluongban" msprop:Generator_ColumnPropNameInTable="soluongbanColumn" msprop:Generator_UserColumnName="soluongban" type="xs:int" minOccurs="0" />
+              <xs:element name="soluongton" msprop:Generator_ColumnVarNameInTable="columnsoluongton" msprop:Generator_ColumnPropNameInRow="soluongton" msprop:Generator_ColumnPropNameInTable="soluongtonColumn" msprop:Generator_UserColumnName="soluongton" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
